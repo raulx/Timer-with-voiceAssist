@@ -1,0 +1,104 @@
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: inherit;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative
+}
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 45rem;
+    width: 50rem;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+.timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30%;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 2rem;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5rem;
+}
+.btn{
+    height: 5.2rem;
+    width: 9.3rem;
+    border: none;
+    background-color: #fff;
+    transition: all 0.1s;
+}
+.btn img{
+    height: 100%;
+    width: 100%;
+}
+.btn1{
+    position:absolute;
+    top: -2%;
+    left: 5%;
+    transform: skewX(39deg) skewY(-26deg);
+
+}
+.btn1:active{
+    transform: skewX(39deg) skewY(-26deg) translateY(.8rem);
+}
+.btn2{
+    position: absolute;
+    top: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.btn2:active{
+    transform: translateX(-50%) translateY(.8rem);
+}
+.btn3{
+    position: absolute;
+    top: -2%;
+    right: 5%;
+    transform: skewX(-39deg) skewY(26deg);
+}
+.btn3:active{
+    transform:skewX(-39deg) skewY(26deg) translateY(.8rem);
+}
+@media(max-width:520px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:420px){
+    html{
+        font-size: 40%;
+    }
+}
+@media(max-width:330px){
+    html{
+        font-size: 30%;
+    }
+}
+@media(max-width:250px){
+    html{
+        font-size: 20%;
+    }
+}
