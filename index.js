@@ -58,6 +58,8 @@ startBtn.addEventListener('click',()=>{
     if(!timer){
         timer = setInterval(startTimer,1000)
         startSound.play()
+        let utterance = new SpeechSynthesisUtterance('Your time starts now.');
+        synth.speak(utterance);
     }
 })
 
